@@ -224,146 +224,28 @@
     <p class="paragraph-3 nerf_text">
       NeRF based and Generalizable NeRFs algorithms are evaluated in single-scene and cross-scene respectively. Depth supervised NVS achieves consistently improved results.  WildRGB-D offers a new platform for evaluating view synthesis approaches using RGB or RGB-D data. 
     </p>
-    <img src="img/nvs.png" style="width:70%; margin-right:0px; margin-top:0px;">
-  
+    <!-- <img src="img/nvs.png" style="width:70%; margin-right:0px; margin-top:0px;"> -->
+    <div class="columns-5 w-row">
+      <video  width=100% height=100% autoplay muted controls loop preload="metadata" poster="">
+        <source src="video/scene1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video  width=100% height=100% autoplay muted controls loop preload="metadata" poster="">
+        <source src="video/scene3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video  width=100% height=100% autoplay muted controls loop preload="metadata" poster="">
+        <source src="video/scene4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video  width=100% height=100% autoplay muted controls loop preload="metadata" poster="">
+        <source src="video/scene5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <img src="img/nvs_name.png" style="width:100%; margin-right:0px; margin-top:0px;">
+
     </br>
-
-    <!-- <div class="columns-5 w-row">
-      <style type="text/css">
-          .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
-          .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-            font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:3px 3px;word-break:normal;}
-          .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-            font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg .tg-baqh{text-align:center;vertical-align:top}
-          .tg .tg-6qw1{background-color:#c0c0c0;text-align:center;vertical-align:top}
-          .tg .tg-6qw2{background-color:#e4e1e1;text-align:center;vertical-align:top}
-          </style>
-          <table class="tg" style="undefined;table-layout: fixed; width: 582px; margin-left:auto;margin-right:auto;">
-          <colgroup>
-          <col style="width: 90px">
-          <col style="width: 50px">
-          <col style="width: 50px">
-          <col style="width: 50px">
-          <col style="width: 70px">
-          <col style="width: 70px">
-          <col style="width: 70px">
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="tg-6qw1">Dataset</th>
-              <th class="tg-6qw1">Real</th>
-              <th class="tg-6qw1">Full 3D</th>
-              <th class="tg-6qw1">Video</th>
-              <th class="tg-6qw1">#Objects</th>
-              <th class="tg-6qw1">#Classes </th>
-              <th class="tg-6qw1"> R<sup>LVIS</sup>(%)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="tg-baqh"><a href=https://shapenet.org/ target="_blank"> ShapeNet</a></td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-6qw2"><b>51k</b></td>
-              <td class="tg-baqh">55</td>
-              <td class="tg-baqh">4.1</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://modelnet.cs.princeton.edu/ target="_blank"> ModelNet</a></td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">12k</td>
-              <td class="tg-baqh">40</td>
-              <td class="tg-baqh">2.4</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://tianchi.aliyun.com/specials/promotion/alibaba-3d-future target="_blank"> 3D-Future</a></td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">16k</td>
-              <td class="tg-baqh">34</td>
-              <td class="tg-baqh">1.3</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://amazon-berkeley-objects.s3.amazonaws.com/index.html target="_blank"> ABO</a></td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">8k</td>
-              <td class="tg-baqh">63</td>
-              <td class="tg-baqh">3.5</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://github.com/rehg-lab/lowshot-shapebias target="_blank"> Toys4K</a></td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">4k</td>
-              <td class="tg-baqh">105</td>
-              <td class="tg-baqh">7.7</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://ai.facebook.com/datasets/CO3D-dataset/ target="_blank"> CO3D</a></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">19K</td>
-              <td class="tg-baqh">50</td>
-              <td class="tg-baqh">4.2</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://roboimagedata.compute.dtu.dk/?page_id=36 target="_blank"> DTU</a></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">124</td>
-              <td class="tg-baqh">-</td>
-              <td class="tg-baqh">0</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://hkust-vgd.github.io/scanobjectnn/ target="_blank"> ScanObjectNN</a></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">15k</td>
-              <td class="tg-baqh">15</td>
-              <td class="tg-baqh">1.3</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://research.google/resources/datasets/scanned-objects-google-research/ target="_blank"> GSO</a></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">1k</td>
-              <td class="tg-baqh">17</td>
-              <td class="tg-baqh">0.9</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><a href=https://liuliu66.github.io/articulationobjects/ target="_blank"> AKB-48</a></td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh"></td>
-              <td class="tg-baqh">2k</td>
-              <td class="tg-baqh">48</td>
-              <td class="tg-baqh">1.8</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh">Ours</td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">&#x2713;</td>
-              <td class="tg-baqh">6k</td>
-              <td class="tg-6qw2"><b>190</b></td>
-              <td class="tg-6qw2"><b>10.8</b></td>
-            </tr>
-          </tbody>
-          </table>
-    </div> -->
-
 
     <h2 class="grey-heading_nerf">
         <b>Camera Pose Estimation</b>
@@ -384,9 +266,20 @@
       We conduct object surface reconstruction in WildRGB-D dataset with RGB or RGB-D videos and object masks through Instant-NGP and Neusfacto. Results show that our depth information endow reconstruction with more accurate precision and SDF-based algorithm performs better in this setting.
     </p>
 
-    <img src="img/surface.png" style="width:70%; margin-right:0px; margin-top:0px;">
+    <!-- <img src="img/surface.png" style="width:70%; margin-right:0px; margin-top:0px;"> -->
+    
+    <div class="columns-5 w-row">
+      <video  width=100% height=100% autoplay muted controls loop preload="metadata" poster="">
+        <source src="video/recon1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video  width=100% height=100% autoplay muted controls loop preload="metadata" poster="">
+        <source src="video/recon2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     <img src="img/surface2.png" style="width:70%; margin-right:0px; margin-top:0px;">
-  
+
     </br>
 
     <h2 class="grey-heading_nerf">
